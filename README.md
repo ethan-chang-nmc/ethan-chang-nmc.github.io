@@ -1,5 +1,5 @@
 ## Ethan Chang's Personal Webpage
-video demo: 
+video demo: https://www.youtube.com/watch?v=U8Y00VB-3M8
 
 about: A static website coded by yours truly as a personal website to showcase some things about me. The file index.html contains the HTML code for this one-page site, styles.css with the styling choices in CSS, and script.js containing the javascript elements. The logos used were all downloaded from official websites following their copyright laws. All other files are photos used within the website.
 
