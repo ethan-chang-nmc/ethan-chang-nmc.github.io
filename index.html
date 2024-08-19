@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="name"><a href="#top">ETHAN CHANG</a></div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>        
+    </div>
+
+    <div id="top"></div> <!-- Anchor for top of page -->
+
+    <div class="hero-section">
+        <div class="content">
+            <div class="waviy">
+                <!-- Neuroscience -->
+                <span style="--i:0">N</span>
+                <span style="--i:1">e</span>
+                <span style="--i:2">u</span>
+                <span style="--i:3">r</span>
+                <span style="--i:4">o</span>
+                <span style="--i:5">s</span>
+                <span style="--i:6">c</span>
+                <span style="--i:7">i</span>
+                <span style="--i:8">e</span>
+                <span style="--i:9">n</span>
+                <span style="--i:10">c</span>
+                <span style="--i:11">e</span>
+                <br/>
+                <!-- Mathematics -->
+                <span style="--i:0">M</span>
+                <span style="--i:1">a</span>
+                <span style="--i:2">t</span>
+                <span style="--i:3">h</span>
+                <span style="--i:4">e</span>
+                <span style="--i:5">m</span>
+                <span style="--i:6">a</span>
+                <span style="--i:7">t</span>
+                <span style="--i:8">i</span>
+                <span style="--i:9">c</span>
+                <span style="--i:10">s</span>
+                <br/>
+                <!-- Computer Science -->
+                <span style="--i:0">C</span>
+                <span style="--i:1">o</span>
+                <span style="--i:2">m</span>
+                <span style="--i:3">p</span>
+                <span style="--i:4">u</span>
+                <span style="--i:5">t</span>
+                <span style="--i:6">e</span>
+                <span style="--i:7">r</span>
+                <span> </span>
+                <span style="--i:8">S</span>
+                <span style="--i:9">c</span>
+                <span style="--i:10">i</span>
+                <span style="--i:11">e</span>
+                <span style="--i:12">n</span>
+                <span style="--i:13">c</span>
+                <span style="--i:14">e</span>
+            </div>
+            <p>Investigating the intersection to discover solutions that will drive humanity forwards.</p>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <img src="EC-PH.jpg" alt="Profile Image">
+        <div class="content-text">
+            <h1>Ethan Chang</h1>
+            <h2>C.O. 2025 @ University of Rochester</h2>
+            <p>
+                Hi! I am currently pursuing a dual degree in B.S. Neuroscience and B.S. Applied Mathematics. 
+                I hope to enter graduate school to pursue a Ph.D. in Neuroscience, with research interests in modeling populations
+                of neurons to better understand how our brain functions and applying new discoveries to advance modern technologies.
+                Currently, I am in Dr. Nedergaard's lab at the Center for Translational Neuromedicine. 
+                Some of my hobbies include archery, crocheting, reading, and playing the piano!
+            </p>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <div class="box-section">
+        <div class="box">
+            <img src="archeryAbt.jpg" alt="Archery Image" onclick="openModal('archeryAbt.jpg')">
+        </div>
+        <div class="box">
+            <img src="posterAbt.jpg" alt="Poster Image" onclick="openModal('posterAbt.jpg')">
+        </div>
+        <div class="box">
+            <img src="meAbt.jpg" alt="Me Image" onclick="openModal('meAbt.jpg')">
+        </div>
+    </div>
+
+    <div class="box-section">
+        <div class="box">
+            <img src="me_jp.jpg" alt="Archery Image" onclick="openModal('me_jp.jpg')">
+        </div>
+        <div class="box">
+            <img src="me_jp2.jpg" alt="Poster Image" onclick="openModal('me_jp2.jpg')">
+        </div>
+        <div class="box">
+            <img src="tc_dog.jpg" alt="Me Image" onclick="openModal('tc_dog.jpg')">
+        </div>
+    </div>
+
+    <div class="parallax-section">
+        <h1 class="quote">
+            <span>“Every</span> 
+            <span>great</span> 
+            <span>and</span> 
+            <span>deep</span> 
+            <span>difficulty</span>
+            <span>bears</span> 
+            <span>in</span> 
+            <span>itself</span> 
+            <span>its</span> 
+            <span>own</span> 
+            <span>solution.</span>
+            <span>It</span> 
+            <span>forces</span> 
+            <span>us</span> 
+            <span>to</span> 
+            <span>change</span> 
+            <span>our</span> 
+            <span>thinking</span>
+            <span>in</span> 
+            <span>order</span> 
+            <span>to</span> 
+            <span>find</span> 
+            <span>it.”</span> 
+            <br><br/>
+            <span style = "font-size: 25px;">―</span> 
+            <span style = "font-size: 25px">Niels</span> 
+            <span style = "font-size: 25px">Bohr</span>
+        </h1>
+    </div>
+    
+    <div id="portfolio" class="portfolio-section">
+        <div class="content">
+            <h1>Publications</h1>
+            <ul>
+                <li><b>Chang E</b>, Giannetto M, Gahn-Martinez D, Nedergaard M. Effect of Aquaporin-4 Expression on Glymphatic Clearance Routes and Function. <i>In preperation.</i></li>
+                <li>Gahn-Martinez D, Giannetto M, <b>Chang E</b>, Beam N, Pla V, Nedergaard M. Chronic Intracerebroventricular Cannulation as A Viable Delivery Method To Cerebrospinal Fluid. <i>In preperation.</i></li>
+                <li>Giannetto M, Gomolka R, Gahn-Martinez D, Newbold E, Bork P, <b>Chang E</b>, Gresser M, Thompson T, Mori Y, Nedergaard M. Glymphatic fluid transport is suppressed by the AQP4 inhibitor AER-271. Glia. doi: 10.1002/glia.24515</li>
+            </ul>
+            <h1>Presentations</h1>
+            <ul>
+                <li><b>Chang E (presenter)</b>, Giannetto M, Gahn-Martinez D, Nedergaard M. Aquaporin-4 Expression and Size-Dependent Solute Movement in the Brain. University of Rochester Undergraduate Research Exposition. 2024.</li>
+                <li><b>Chang E (presenter)</b>, Barth RK. Isolation of Hydrogen Sulfide Producing Bacteria from the environment. Department of Microbiology and Immunology Poster Session. 2023.</li>
+                <li>Giannetto M, Gomolka R, Gahn-Martinez D, Newbold E, Bork P, <b>Chang E (presenter)</b>, Gresser M, Thompson T, Mori Y, Nedergaard M. Glymphatic fluid transport is suppressed by the AQP4 inhibitor AER-271. University of Rochester Undergraduate Program in Biology and Medicine Poster Symposium. 2023.</li>
+            </ul>
+            <h1>Projects</h1>
+            <ul>
+                <li><a href="https://ethan-chang-nmc.github.io" class="custom-link">This Webpage!</a></li>
+            </ul>
+            <h5><a href="Ethan_Chang_CV.pdf" class="cv-link" download="Ethan_Chang_CV.pdf">Get my most recent C.V. here</a>.</h5>
+        </div>
+    </div>
+    
+
+    <footer id="contact" class="footer">
+        <div class="footer-icons">
+            <a href="mailto:etchang949@gmail.com" target="_blank">
+                <img src="mail.svg" alt="Mail">
+            </a>
+            <a href="https://www.linkedin.com/in/ethan-chang-nmc/" target="_blank">
+                <img src="In-White-26.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/ethan-chang-nmc" target="_blank">
+                <img src="github-mark-white.svg" alt="GitHub">
+            </a>
+            <a href="https://orcid.org/0009-0001-4704-5420" target="_blank">
+                <img src="ORCID Logomark White Vector.svg" alt="OrcID">
+            </a>
+            <a href="https://www.instagram.com/ethanchang.824/" target="_blank">
+                <img src="Instagram_Glyph_White.svg" alt="Instagram">
+            </a>
+        </div>
+        <hr>
+        <p>Copyright © 2024 Ethan Chang</p>
+    </footer>
+    
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

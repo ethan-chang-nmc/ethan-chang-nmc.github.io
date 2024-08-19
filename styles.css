@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif; /* Similar font */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: black;
+    padding: 8px 10px; /* Slightly thinner navigation bar */
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Aligns with image left edge */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.hero-section {
+    background-color: black;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('BH.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensures it stays above the background but below other content */
+    transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+}
+
+.hero-section h1 {
+    font-size: 52px; /* Fixed font size */
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.hero-section p {
+    font-size: 20px; /* Fixed font size */
+}
+
+.waviy {
+    position: relative;
+    display: inline-block;
+    font-size: 52px; /* Ensure this matches your h1 size */
+    color: #fff;
+    text-transform: uppercase;
+    animation: none;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    animation: flip 3.5s infinite; /* Increased duration for slower flips */
+    animation-delay: calc(1s * var(--i)); /* Delay subsequent letters by 1 second */
+}
+
+.waviy span:first-child {
+    animation-delay: 0s; /* First letter starts immediately */
+}
+
+@keyframes flip {
+    0%, 80% {
+        transform: rotateY(360deg);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px; /* Adjust for the fixed navbar */
+    position: relative;
+    z-index: 3;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.container img {
+    max-width: 220px;
+    margin-right: 50px;
+    background-color: black;
+    border-radius: 15px; /* Rounded corners */
+}
+
+.container .content-text {
+    background-color: black;
+    max-width: 600px;
+}
+
+.content-text h1 {
+    font-size: 36px;
+    background-color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content-text h2 {
+    background-color: black;
+    font-size: 24px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.content-text p {
+    background-color: black;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.box-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.box {
+    width: 30%; /* Ensure all images have the same width */
+    margin: 10px;
+    height: 300px; /* Ensure all images have the same height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Rounded corners for the images */
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the box without distortion */
+    border-radius: 15px; /* Apply the rounded corners to the images */
+    cursor: pointer; /* Change cursor to pointer when hovering over the image */
+}
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parallax-section {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('BG2.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-section .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensures it stays above the background but below other content */
+    transition: opacity 0.5s ease-in-out, ; /* Smooth transition for opacity */
+}
+
+.parallax-section .quote {
+    line-height: 1.5;
+    font-size: 35px;
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    opacity: 0; /* Start hidden */
+    filter: blur(4px); /* Start with blur */
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.parallax-section .quote.active {
+    opacity: 1; /* Fully visible when active */
+    filter: blur(0); /* Remove blur */
+    transform: scale(1);
+}
+
+.parallax-section .quote span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.parallax-section .quote span:nth-child(1) { animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+.parallax-section .quote span:nth-child(2) { animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+/* Continue the nth-child animations as you have */
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.portfolio-section {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolio-section .content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.portfolio-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.portfolio-section p, .porfolio-section ul {
+    text-align: justify; /* Justify the text alignment */
+    margin-bottom: 20px; /* Space between paragraphs or list items */
+}
+
+.portfolio-section ul {
+    list-style-type: none; /* No bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.portfolio-section ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.custom-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
+/* Style for the C.V. download link */
+.cv-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cv-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-icons {
+    margin-bottom: 20px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-icons img {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Make icons white */
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons a:hover img {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px auto;
+    width: 50%; /* Center the line */
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
