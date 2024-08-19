@@ -1,5 +1,5 @@
 ## Ethan Chang's Personal Webpage
-video demo:
+video demo: <br/>
 about: A static website coded by yours truly as a personal website to showcase some things about me.
 
 About me:
