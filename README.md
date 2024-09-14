@@ -18,7 +18,7 @@ About me:
 - 🔭 I’m currently working on self-projects and coursework!
 - 🌱 I’m currently learning neuroscience, mathematics, and computer science!
 - 👯 I’m looking to collaborate on any cool projects related to machine learning!
-- 🤔 I’m looking for help with nothing at the moment!
+<!-- - 🤔 I’m looking for help with nothing at the moment!-->
 - 💬 Ask me about anything!
 - 📫 How to reach me: etchang949@gmail.com
 - 😄 Pronouns: He/Him
