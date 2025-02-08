@@ -154,6 +154,26 @@ body {
     text-align: justify;
 }
 
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjusts space between the two sections */
+    margin-top: 20px;
+}
+
+.info-sections .content-text {
+    flex: 1; /* Ensures equal width for both sections */
+    min-width: 250px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
 .box-section {
     display: flex;
     justify-content: center;
