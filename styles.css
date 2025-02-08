@@ -156,43 +156,41 @@ body {
 
 .info-sections {
     display: flex;
-    justify-content: space-between; /* Ensure equal spacing between sections */
-    align-items: flex-start; /* Align content at the top */
-    background-color: black; /* Match container background */
-    color: white; /* Match container text color */
-    padding: 20px; /* Add padding for spacing inside the section */
-    margin-top: 20px; /* Space below the content above */
-    border-radius: 15px; /* Match the rounded corners of the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
-    width: 100%; /* Make it span the full width of the container */
-    box-sizing: border-box; /* Include padding in the width calculation */
+    justify-content: space-between; /* Distribute sections evenly */
+    align-items: flex-start; /* Align sections to the top */
+    margin-top: 20px;
+    padding: 0 50px; /* Match the image margin */
+    width: calc(100% - 100px); /* Match the container width minus padding */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .info-sections .content-text {
-    flex: 1; /* Ensure equal width for both sections */
-    margin-right: 20px; /* Add spacing between the two sections */
-    max-width: 100%; /* Allow the section to stretch fully */
-    background-color: black; /* Match the container background */
-    padding: 20px; /* Add padding inside each section */
-    border-radius: 10px; /* Slightly smaller rounded corners for sections */
-    box-sizing: border-box; /* Include padding in the width */
+    flex: 1; /* Equal width for both sections */
+    padding: 10px; /* Add spacing inside the sections */
+    border-radius: 10px; /* Optional: rounded corners */
+    background-color: black; /* Match the background */
+    color: white; /* Match the text color */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.info-sections .content-text:first-child {
+    margin-left: 0; /* Align the Education section with the image */
 }
 
 .info-sections .content-text:last-child {
-    margin-right: 0; /* Remove margin from the last section */
+    margin-right: 0; /* Align the Research Interests section with the content */
 }
 
 .info-sections ul {
     padding-left: 20px;
-    list-style-type: disc; /* Use bullets for the list */
+    list-style-type: disc; /* Bullets for list */
 }
 
 .info-sections ul li {
-    margin-bottom: 10px; /* Add spacing between list items */
-    font-size: 18px; /* Match text size to the container */
-    line-height: 1.6; /* Ensure readability */
+    margin-bottom: 10px; /* Add spacing between items */
+    font-size: 18px; /* Match container text size */
+    line-height: 1.6; /* Improve readability */
 }
-
 
 .box-section {
     display: flex;
