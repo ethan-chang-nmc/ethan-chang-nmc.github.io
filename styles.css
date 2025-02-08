@@ -12,10 +12,10 @@ body {
 
 .navbar {
     background-color: black;
-    padding: 8px 10px; /* Slightly thinner navigation bar */
+    padding: 0.5% 1%; /* Slightly thinner navigation bar */
     display: flex;
     align-items: center;
-    padding-left: 50px; /* Aligns with image left edge */
+    padding-left: 5.25%; /* Aligns with image left edge */
     position: fixed;
     width: 100%;
     top: 0;
@@ -23,22 +23,28 @@ body {
 }
 
 .name {
-    font-size: 24px;
+    font-size: 1.65vw;
     font-weight: bold;
     color: white;
-    margin-right: 30px;
+    margin-right: 4%;
+    margin-top: 0.65%;
+    margin-bottom: 0.65%;
     cursor: pointer;
 }
 
 .links {
-    display: flex;
+    font-size: 1.1vw;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0.65%;
+    margin-bottom: 0.65%;
+    cursor: pointer;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
-    margin: 0 10px;
 }
 
 .navbar a:hover {
@@ -58,7 +64,7 @@ body {
     background-position: center;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     text-align: center;
-    padding: 20px;
+    padding: 10%;
     position: relative;
     overflow: hidden;
 }
@@ -73,19 +79,18 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 52px; /* Fixed font size */
+    font-size: 3.5vw; /* Fixed font size */
     font-weight: bold;
-    margin-bottom: 60px;
 }
 
 .hero-section p {
-    font-size: 20px; /* Fixed font size */
+    font-size: 1.35vw; /* Fixed font size */
 }
 
 .waviy {
     position: relative;
     display: inline-block;
-    font-size: 52px; /* Ensure this matches your h1 size */
+    font-size: 3.5vw; /* Ensure this matches your h1 size */
     color: #fff;
     text-transform: uppercase;
     animation: none;
@@ -121,8 +126,8 @@ body {
 }
 
 .container img {
-    max-width: 220px;
-    margin-right: 50px;
+    max-width: 15vw;
+    margin-right: 3.5%;
     background-color: black;
     border-radius: 15px; /* Rounded corners */
 }
@@ -160,8 +165,10 @@ body {
     align-items: flex-start; /* Align sections to the top */
     margin-top: 20px;
     padding: 0 50px; /* Match the image margin */
-    width: calc(100% - 100px); /* Match the container width minus padding */
+    max-width: 65%;
     box-sizing: border-box; /* Include padding in width calculation */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-sections .content-text {
