@@ -156,23 +156,43 @@ body {
 
 .info-sections {
     display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Adjusts space between the two sections */
-    margin-top: 20px;
+    justify-content: space-between; /* Ensure equal spacing between sections */
+    align-items: flex-start; /* Align content at the top */
+    background-color: black; /* Match container background */
+    color: white; /* Match container text color */
+    padding: 20px; /* Add padding for spacing inside the section */
+    margin-top: 20px; /* Space below the content above */
+    border-radius: 15px; /* Match the rounded corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+    width: 100%; /* Make it span the full width of the container */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .info-sections .content-text {
-    flex: 1; /* Ensures equal width for both sections */
-    min-width: 250px;
+    flex: 1; /* Ensure equal width for both sections */
+    margin-right: 20px; /* Add spacing between the two sections */
+    max-width: 100%; /* Allow the section to stretch fully */
+    background-color: black; /* Match the container background */
+    padding: 20px; /* Add padding inside each section */
+    border-radius: 10px; /* Slightly smaller rounded corners for sections */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
-ul {
+.info-sections .content-text:last-child {
+    margin-right: 0; /* Remove margin from the last section */
+}
+
+.info-sections ul {
     padding-left: 20px;
+    list-style-type: disc; /* Use bullets for the list */
 }
 
-ul li {
-    margin-bottom: 5px;
+.info-sections ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-size: 18px; /* Match text size to the container */
+    line-height: 1.6; /* Ensure readability */
 }
+
 
 .box-section {
     display: flex;
