@@ -1,7 +1,7 @@
 ## Ethan Chang's Personal Webpage
 video demo: https://www.youtube.com/watch?v=U8Y00VB-3M8
 
-about: A static website coded by yours truly as a personal website to showcase some things about me. The file index.html contains the HTML code for this one-page site, styles.css with the styling choices in CSS, and script.js containing the javascript elements. The logos used were all downloaded from official websites following their copyright laws. All other files are photos used within the website.
+about: A static website coded by yours truly as a personal website to showcase some things about me, for the Harvard CS50 course. The file index.html contains the HTML code for this one-page site, styles.css with the styling choices in CSS, and script.js containing the javascript elements. The logos used were all downloaded from official websites following their copyright laws. All other files are photos used within the website.
 
 I settled on a single webpage as a design to keep a fluid-flowing user experience. I played with having multiple web pages but did not like how the decreased content limited my stylistic choices. I took inspiration from Apple’s clean, modern-looking website and their box design used for product promotions for my images. I also liked the sectioning of content from the sites of Nvidia and Blackrock and took that as inspiration for the skeleton of the website. <br/>
 As a big fan of the parallax effect, I knew I wanted to incorporate it into my website. This would also allow me to incorporate background images that encapsulated the main areas of focus of my professional interests. I also had to use JavaScript to make sure the section would disappear after scrolling past it. I knew I wanted to have the About section following the hero section, and took inspiration from basic About sections from companies. A more personable website (while still being professional) was desired, so I decided to add a section of images (which was made so that they are enlarged when clicking on them) to achieve this effect. I then knew I wanted a second parallax section breaking the About section from my portfolio, with links to contact me at the footer. From this, the main design of the website was laid out. From the stylistic advice of some friends, I shifted to a pure black background with white text and a quote in the second parallax section that I felt embodied a part of my mindset.
@@ -20,7 +20,6 @@ About me:
 - 👯 I’m looking to collaborate on any cool projects related to machine learning!
 <!-- - 🤔 I’m looking for help with nothing at the moment!-->
 - 💬 Ask me about anything!
-- 📫 How to reach me: etchang949@gmail.com
-- 😄 Pronouns: He/Him
+- 📫 How to reach me: ethanc@wustl.edu
 - ⚡ Fun fact: I like skiing!
 <!-- **ethan-chang-nmc/ethan-chang-nmc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile. -->
