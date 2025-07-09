@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('BH.jpg'); /* Replace with your image path */
+    background-image: url('images-website/BH.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -274,7 +274,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('BG2.jpg'); /* Replace with your image path */
+    background-image: url('images-website/BG2.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
