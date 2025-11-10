@@ -10,18 +10,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-function openModal(imageSrc) {
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImage");
-    modal.style.display = "block";
-    modalImg.src = imageSrc;
-}
-
-function closeModal() {
-    const modal = document.getElementById("imageModal");
-    modal.style.display = "none";
-}
-
 window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.parallax-section');
     const scrollPosition = window.scrollY;

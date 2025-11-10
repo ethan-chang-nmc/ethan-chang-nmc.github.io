@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Arial", sans-serif; /* Similar font */
+    font-family: Consolas, "Courier New", monospace;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
@@ -224,46 +224,6 @@ body {
     object-fit: cover; /* Ensures images cover the box without distortion */
     border-radius: 15px; /* Apply the rounded corners to the images */
     cursor: pointer; /* Change cursor to pointer when hovering over the image */
-}
-
-
-/* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.9); /* Black with opacity */
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 15px;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .parallax-section {
