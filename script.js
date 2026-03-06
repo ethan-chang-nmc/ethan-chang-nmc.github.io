@@ -1,63 +1,55 @@
-window.addEventListener('scroll', function() {
-    const content = document.querySelector('.hero-section .content');
-    const scrollPosition = window.scrollY;
+const header = document.querySelector(".site-header");
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+const revealElements = document.querySelectorAll(".reveal");
 
-    // Hide the hero section text when scrolling down
-    if (scrollPosition > 100) { // Adjust the value as needed
-        content.style.opacity = '0';
-    } else {
-        content.style.opacity = '1';
-    }
-});
+/* Sticky header state */
+function updateHeaderState() {
+  if (window.scrollY > 12) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+}
 
-window.addEventListener('scroll', function() {
-    const parallax = document.querySelector('.parallax-section');
-    const scrollPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
+updateHeaderState();
+window.addEventListener("scroll", updateHeaderState, { passive: true });
 
-    // Calculate when the parallax section is in view
-    if (scrollPosition + windowHeight > parallax.offsetTop && scrollPosition < parallax.offsetTop + parallax.offsetHeight) {
-        parallax.style.opacity = '1'; // Fade in
-    } else {
-        parallax.style.opacity = '0'; // Fade out
-    }
-});
+/* Mobile navigation */
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  });
 
-document.querySelectorAll('.navbar a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-
-        window.scrollTo({
-            top: targetElement.offsetTop - navbarHeight,
-            behavior: 'smooth'
-        });
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "Open menu");
     });
-});
+  });
+}
 
-window.addEventListener('scroll', function() {
-    const parallaxSection = document.querySelector('.parallax-section');
-    const quote = document.querySelector('.parallax-section .quote');
-    const scrollPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
-
-    // Check if the parallax section is in view
-    if (scrollPosition + windowHeight > parallaxSection.offsetTop && scrollPosition < parallaxSection.offsetTop + parallaxSection.offsetHeight) {
-        quote.classList.add('active'); // Add the 'active' class to start the animation
-    } else {
-        quote.classList.remove('active'); // Remove the 'active' class to reset the animation
-        quote.querySelectorAll('span').forEach((span, index) => {
-            span.style.animation = ''; // Clear any existing animation
-            span.style.opacity = '0'; // Reset opacity
-            span.style.filter = 'blur(4px)'; // Reset blur
-            // Reapply the animation with the correct delay
-            setTimeout(() => {
-                span.style.animation = `fade-in 0.8s ${0.1 * (index + 1)}s forwards cubic-bezier(0.11, 0, 0.5, 0)`;
-            }, 50);
-        });
+/* Reveal on scroll */
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
     }
-});
+  );
 
+  revealElements.forEach((element) => observer.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+}
