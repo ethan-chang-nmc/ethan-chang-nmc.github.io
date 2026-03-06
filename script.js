@@ -2,7 +2,6 @@ const header = document.querySelector(".site-header");
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
-const revealElements = document.querySelectorAll(".reveal");
 
 /* Sticky header state */
 function updateHeaderState() {
@@ -31,25 +30,4 @@ if (navToggle && navMenu) {
       navToggle.setAttribute("aria-label", "Open menu");
     });
   });
-}
-
-/* Reveal on scroll */
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-    }
-  );
-
-  revealElements.forEach((element) => observer.observe(element));
-} else {
-  revealElements.forEach((element) => element.classList.add("is-visible"));
 }
