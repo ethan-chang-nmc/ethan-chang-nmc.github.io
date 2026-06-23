@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ethan Chang | Neuroscience Ph.D. Student</title>
+  <title>Ethan Chang | Ph.D. Student </title>
   <meta
     name="description"
-    content="Ethan Chang is a neuroscience Ph.D. student working at the intersection of computational neuroscience, astrocytes, and bio-inspired machine learning."
+    content="Personal academic website of Ethan Chang."
   />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body id="top">
   <header class="site-header">
-    <nav class="navbar container" aria-label="Primary">
+    <nav class="navbar container" aria-label="Primary navigation">
       <a class="site-logo" href="#top">Ethan Chang</a>
 
       <button
@@ -29,243 +29,194 @@
       </button>
 
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Background</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#publications">Publications</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <p class="hero-kicker">Computational Neuroscience · Astrocytes · Machine Learning</p>
-        <p class="hero-title">Ethan Chang</p>
-        <p class="hero-subtitle">
-          Researching how astrocytes shape neural computation to 
-          inform bio-inspired artificial intelligence.
+  <main class="container page-layout">
+    <section class="profile-intro" aria-labelledby="page-title">
+      <aside class="profile-side" aria-label="Profile details">
+        <img
+          src="images-me/EC-PH-F.jpg"
+          alt="Portrait of Ethan Chang"
+          class="profile-image"
+        />
+
+        <div class="side-section contact-section" id="contact">
+          <h2>Contact</h2>
+          <div class="profile-links" aria-label="Profile links">
+            <a href="mailto:ethanchang.nmc@gmail.com" aria-label="Email" title="Email">
+              <img src="icons/mail.svg" alt="" />
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=Gy6LSxoAAAAJ&hl=en&oi=ao"
+              aria-label="Google Scholar"
+              title="Google Scholar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="icons/google-scholar.png" alt="" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ethan-chang-nmc/"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="icons/linkedin.png" alt="" />
+            </a>
+            <a
+              href="https://github.com/ethan-chang-nmc"
+              aria-label="GitHub"
+              title="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="icons/github.svg" alt="" />
+            </a>
+            <a
+              href="https://orcid.org/0009-0001-4704-5420"
+              aria-label="ORCID"
+              title="ORCID"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="icons/orcid.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="side-section">
+          <h2>Affiliation</h2>
+          <p>
+            Neuroscience Ph.D. student<br />
+            Washington University in St. Louis
+            <p class="cv-text-link">
+            <a href="documents/Ethan_Chang_CV.pdf" target="_blank" rel="noopener noreferrer">Get my CV here</a>
+          </p>
+          </p>
+        </div>
+      </aside>
+
+      <div class="profile-main">
+        <p class="eyebrow">Neuroscience · computation · astrocytes</p>
+        <h1 id="page-title">Ethan Chang</h1>
+        <p class="intro-text">
+          I’m a neuroscience Ph.D. student at Washington University in St. Louis, where I study how astrocytes interact with neural circuits and how those ideas might inform computational models of the brain.
         </p>
+        <p>
+          My interests sit between biology and computation. I’m especially drawn to questions where cellular mechanisms, circuit dynamics, and machine learning can be used together: what can careful biology teach us about computation, and what can computational tools help us see in biology?
+        </p>
+        <p>
+          Before beginning my Ph.D., I worked in the Nedergaard Lab at the University of Rochester, studying AQP4 localization on astrocyte endfeet and its relationship to glymphatic function. I’m also pursuing graduate training in computer science, with interests in machine learning, deep learning, and reinforcement learning.
+        </p>
+      </div>
+    </section>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#about">Learn More</a>
-          <a class="button button-secondary" href="#publications">View Work</a>
+    <section id="research" class="content-section" aria-labelledby="research-title">
+      <h2 id="research-title">Research interests</h2>
+      <p>
+        I am broadly interested in how non-neuronal cells shape neural computation. At the moment, I am thinking about astrocytes not just as support cells, but as active participants in the dynamics of neural circuits.
+      </p>
+      <ul class="topic-list">
+        <li>Astrocyte function in neural circuits</li>
+        <li>Computational neuroscience and brain dynamics</li>
+        <li>Biologically grounded machine learning models</li>
+        <li>Deep learning and reinforcement learning</li>
+        <li>Glymphatic function and AQP4 biology</li>
+      </ul>
+    </section>
+
+    <section id="background" class="content-section" aria-labelledby="background-title">
+      <h2 id="background-title">Background</h2>
+
+      <div class="two-column-list">
+        <div>
+          <h3>Research affiliations</h3>
+          <ul class="detail-list">
+            <li>
+              <strong>Brain Dynamics and Control Lab</strong>
+              <span>Ph.D. student · PI: ShiNung Ching · Department of Electrical and Systems Engineering, Washington University in St. Louis · 2025–present</span>
+            </li>
+            <li>
+              <strong>Papouin Lab</strong>
+              <span>Ph.D. student · PI: Thomas Papouin · Department of Neuroscience, Washington University in St. Louis · 2025–present</span>
+            </li>
+            <li>
+              <strong>Nedergaard Lab</strong>
+              <span>Student researcher · PI: Maiken Nedergaard · Department of Neurology, University of Rochester · 2021–2025</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Education</h3>
+          <ul class="detail-list">
+            <li>
+              <strong>Ph.D. in Neuroscience</strong>
+              <span>Washington University in St. Louis · 2025–2030</span>
+            </li>
+            <li>
+              <strong>M.S. in Computer Science</strong>
+              <span>Johns Hopkins University · 2025–2028</span>
+            </li>
+            <li>
+              <strong>B.S. in Neuroscience, High Distinction</strong>
+              <span>University of Rochester · 2021–2025</span>
+            </li>
+            <li>
+              <strong>B.A. in Mathematics</strong>
+              <span>University of Rochester · 2021–2025</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container section-grid section-grid-about">
-        <div class="about-media">
-          <img
-            src="images-me/EC-PH.jpg"
-            alt="Portrait of Ethan Chang"
-            class="profile-image"
-          />
-        </div>
+    <section id="publications" class="content-section" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
 
-        <div class="about-content">
-          <p class="section-label">About</p>
-          <p class="section-title">Research-driven Discovery</p>
-          <p class="lead">
-            I am a neuroscience Ph.D. student at Washington University in St. Louis. My interests lie in computational neuroscience, astrocyte biology, and
-            machine learning.
-          </p>
-          <p>
-            My work focuses on understanding how non-neuronal cells called astrocytes contribute to
-            neural circuit function, and how those insights can be translated into
-            more biologically grounded computational models. Prior to this, I was 
-            investigating the role of AQP4 on astrocyte endfeet for Glymphatic function.
-          </p>
-          <p>
-            I am also pursuing advanced training in Computer Science, with interests in machine and deep learning.
-          </p>
-        </div>
-      </div>
-    </section>
+      <h3>Journal articles</h3>
+      <ol class="publication-list">
+        <li>
+          Gahn-Martinez D, Giannetto M, <strong>Chang E</strong>, Beam N, Pla V, Nedergaard M.
+          Chronic intraventricular cannulation for the study of glymphatic transport.
+          <em>eNeuro</em>, 2025.
+          <a
+            class="paper-link"
+            href="https://doi.org/10.1523/ENEURO.0537-24.2025"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View paper
+          </a>
+        </li>
+        <li>
+          Giannetto M, Gomolka R, Gahn-Martinez D, <strong>Chang E</strong>, Gresser M, Thompson T, Mori Y, Nedergaard M.
+          Glymphatic fluid transport is suppressed by the AQP4 inhibitor AER-271.
+          <em>Glia</em>, 2024.
+          <a
+            class="paper-link"
+            href="https://doi.org/10.1002/glia.24515"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View paper
+          </a>
+        </li>
+      </ol>
 
-    <section id="research" class="section section-muted">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Research and Education</p>
-        </div>
 
-        <div class="card-grid">
-          <article class="info-card">
-            <h3>Research Interests</h3>
-            <ul class="clean-list">
-              <li>Astrocyte function in neural circuits</li>
-              <li>Bio-inspired neural network architectures</li>
-              <li>Machine and Reinforcement learning</li>
-            </ul>
-            <h3>Research Affiliations</h3>
-            <ul class="clean-list">
-              <li> PhD Student, Brain Dynamics and Control Lab (PI: ShiNung Ching), Department of Electrical and Systems Engineering, Washington University in St. Louis, 2025-present</li>
-              <li>PhD Student, Papouin Lab (PI: Thomas Papouin), Department of Neuroscience, Washington University in St. Louis, 2025-present
-              <li>Student Researcher, Nedergaard Lab (PI: Maiken Nedergaard), Department of Neurology, University of Rochester, 2021-2025</li>
-            </ul>
-          </article>
-
-          <article class="info-card">
-            <h3>Education</h3>
-            <ul class="timeline-list">
-              <li>
-                <strong>Ph.D. in Neuroscience</strong>
-                <span>Washington University in St. Louis · 2025–2030</span>
-              </li>
-              <li>
-                <strong>M.S. in Computer Science</strong>
-                <span>Johns Hopkins University · 2025–2028</span>
-              </li>
-              <li>
-                <strong>B.S. in Neuroscience, High Distinction</strong>
-                <span>University of Rochester · 2021–2025</span>
-              </li>
-              <li>
-                <strong>B.A. in Mathematics</strong>
-                <span>University of Rochester · 2021–2025</span>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Publications and Presentations</p>
-        </div>
-
-        <div class="content-stack">
-          <article class="publication-block">
-            <h3>Journal Articles</h3>
-            <ol class="publication-list">
-              <li>
-                Gahn-Martinez D, Giannetto M, <strong>Chang E</strong>, Beam N, Pla V, Nedergaard M.
-                Chronic intracerebroventricular cannulation as a viable delivery
-                method to CSF. <em>eNeuro, 2025</em>.
-              </li>
-              <li>
-                Giannetto M, Gomolka R, Gahn-Martinez D, <strong>Chang E</strong>,
-                Gresser M, Thompson T, Mori Y, Nedergaard M. Glymphatic fluid transport is suppressed by the AQP4
-                inhibitor AER-271. <em>Glia, 2024</em>.
-              </li>
-            </ol>
-          </article>
-
-          <article class="publication-block">
-            <h3>Presentations</h3>
-            <ol class="publication-list">
-              <li>
-                <strong>Chang E</strong>, et al. Aquaporin-4 Expression on
-                Glymphatic Clearance Routes and Function. Schwartz Discover Scholar
-                Showcase, 2024.
-              </li>
-              <li>
-                <strong>Chang E</strong>, et al. Aquaporin-4 Expression and
-                Size-Dependent Solute Movement in the Brain. UR Undergraduate
-                Research Exposition, 2024.
-              </li>
-              <li>
-                <strong>Chang E</strong>, Barth RK. Isolation of Hydrogen Sulfide Producing Bacteria from the environment. 
-                Department of Microbiology and Immunology Poster Session, 2023.
-              </li>
-              <li>
-                <strong>Chang E</strong>, et al. Glymphatic fluid transport is suppressed by the AQP4 inhibitor AER-271. 
-                University of Rochester Undergraduate Program in Biology and Medicine Poster Symposium, 2023.
-              </li>
-            </ol>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section section-muted">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Gallery</p>
-          <p class="section-title">Snapshots from life</p>
-        </div>
-
-        <div class="gallery-grid">
-          <img src="images-me/archeryAbt.jpg" alt="Archery photo" />
-          <img src="images-me/posterAbt.jpg" alt="Poster presentation" />
-          <img src="images-me/meAbt.jpg" alt="Portrait photo" />
-          <img src="images-me/me_jp.jpg" alt="Travel photo" />
-          <img src="images-me/me_jp2.jpg" alt="Travel photo" />
-          <img src="images-me/me_kayaking.JPG" alt="Kayaking photo" />
-        </div>
-      </div>
-    </section>
-
-    <section id="cv" class="section section-compact">
-      <div class="container centered">
-        <p class="section-label">Curriculum Vitae</p>
-        <p class="section-title">Download the full CV</p>
-        <a
-          class="button button-primary"
-          href="documents/Ethan_Chang_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download CV
-        </a>
-      </div>
-    </section>
   </main>
 
-  <footer id="contact" class="site-footer">
+  <footer class="site-footer">
     <div class="container footer-content">
-      <div>
-        <h2 class="footer-title">Contact</h2>
-        <p class="footer-text">
-          For research, collaboration, or academic inquiries, feel free to reach out.
-        </p>
-      </div>
-
-      <div class="social-links" aria-label="Social links">
-        <a href="mailto:ethanchang.nmc@gmail.com" aria-label="Email">
-          <img src="icons/mail.svg" alt="" />
-        </a>
-        <a
-          href="https://scholar.google.com/citations?user=Gy6LSxoAAAAJ&hl=en&oi=ao"
-          aria-label="Google Scholar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="icons/google_scholar.png" alt="" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ethan-chang-nmc/"
-          aria-label="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="icons/In-White-26.png" alt="" />
-        </a>
-        <a
-          href="https://github.com/ethan-chang-nmc"
-          aria-label="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="icons/github-mark-white.svg" alt="" />
-        </a>
-        <a
-          href="https://orcid.org/0009-0001-4704-5420"
-          aria-label="ORCID"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="icons/ORCID Logomark White Vector.svg" alt="" />
-        </a>
-      </div>
-
-      <p class="footer-meta">© 2026 Ethan Chang</p>
+      <p>© 2026 Ethan Chang</p>
     </div>
   </footer>
 </body>
