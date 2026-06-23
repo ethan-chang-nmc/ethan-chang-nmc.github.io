@@ -250,13 +250,6 @@ section[id],
   max-width: 690px;
 }
 
-.eyebrow {
-  margin: 0 0 0.45rem;
-  color: var(--muted);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.92rem;
-}
-
 h1 {
   margin: 0 0 1rem;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
